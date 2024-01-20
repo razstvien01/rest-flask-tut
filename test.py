@@ -22,7 +22,11 @@ input()
 # response = requests.delete(BASE + "video/0")
 # print(response)
 
-# input()
-
-response = requests.get(BASE + "video/7")
+response = requests.get(BASE + "video/0")
 print(response.json())
+
+input()
+
+# response = requests.get(BASE + "video/7")
+response = requests.patch(BASE + "video/0", {"views": 99, "likes": 101})
+print(response)
