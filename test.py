@@ -19,10 +19,10 @@ for i in range(len(data)):
 
 input()
 
-response = requests.delete(BASE + "video/0")
-print(response)
+# response = requests.delete(BASE + "video/0")
+# print(response)
 
-input()
+# input()
 
-response = requests.get(BASE + "video/2")
+response = requests.get(BASE + "video/7")
 print(response.json())
